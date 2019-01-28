@@ -10,6 +10,7 @@
         <div>
                 <h1><a href="/">Blog Django Girls</a></h1>
             </div>
+<<<<<<< HEAD
     
             <div>
                 <p>publicado: 14.06.2014, 12:14</p>
@@ -22,5 +23,14 @@
                 <h2><a href="">Meu segundo post</a></h2>
                 <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
             </div>
+=======
+        {% for post in posts %}
+            <div>
+                <p> publicado em: {{post.published_date}}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr}}</p>
+            </div>
+        {% endfor %}    
+>>>>>>> 6f69364c20381580475ce3bfb045c3199b5fd433
     </body>
 </html>
